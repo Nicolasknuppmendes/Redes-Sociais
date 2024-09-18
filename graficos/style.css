@@ -1,3 +1,233 @@
+
+Matematica Ii - 3º Ano C Integral - Médio
+RENI C GAMPER, C E PROFA-EF M PROFIS N
+Próximas atividades
+Nenhuma atividade para a próxima semana!
+
+Escreva um aviso para sua turma
+
+Aviso: "."
+JOEL CAMARGO DO NACIMENTO JUNIOR
+Criado em: 15:5315:53 (editado: 15:56)
+.
+
+informacoesGlobais.js
+JavaScript
+
+style.css
+Folha de estilo
+
+Adicionar comentário para a turma...
+
+
+Aviso: "Entre na nossa turma no Canva!…"
+JOEL CAMARGO DO NACIMENTO JUNIOR via Canva
+Criado em: 13 de set.13 de set.
+Entre na nossa turma no Canva! Registre-se usando o link abaixo ou confira mais instruções no seu e-mail.
+
+Signup to Canva
+https://www.canva.com/brand/join?token=5YOKY6rSVmKAlOz9gXTtLQ&brandingVariant=edu&invitationDestinationType=group
+
+Adicionar comentário para a turma...
+
+
+Aviso: "Vem ser Pro no Canva Maluko"
+JOEL CAMARGO DO NACIMENTO JUNIOR
+Criado em: 6 de set.6 de set.
+Vem ser Pro no Canva Maluko
+
+Signup to Canva
+https://www.canva.com/brand/join?token=Q9-Lg6xLZSE8BcaswAPlJw&brandingVariant=edu&invitationDestinationType=group&inviteId=90d71d97-1300-4c0e-b8a2-284920040537&platform=googleclassroom
+
+Adicionar comentário para a turma...
+
+
+Aviso: ":root{ --cor-fundo: #01080E ;…"
+JOEL CAMARGO DO NACIMENTO JUNIOR
+Criado em: 14 de ago.14 de ago.
+:root{
+    --cor-fundo: #01080E ;
+    --cor-principal: #0B0D20 ;
+    --cor-secundaria: #212333;
+    --cor-destaque: #2BDEFD;
+    --cor-texto: #D7F9FF;
+
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.caixa-principal{
+    background-color: var(--cor-principal);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+}
+
+h1{
+    color: var(--cor-destaque);
+}
+
+button {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    transition: background-color 0.3s;
+}
+
+button:hover{
+    background-color: var(--cor-destaque);
+    color: var(--cor-principal);
+}
+
+Adicionar comentário para a turma...
+
+
+Aviso: "const caixaPrincipal =…"
+JOEL CAMARGO DO NACIMENTO JUNIOR
+Criado em: 14 de ago.14 de ago.
+const caixaPrincipal = document.querySelector(".caixa-principal");
+const caixaPerguntas = document.querySelector(".caixa-perguntas");
+const caixaAlternativas = document.querySelector(".caixa-alternativas");
+const caixaResultado = document.querySelector(".caixa-resultado");
+const textoResultado = document.querySelector(".texto-resultado");
+
+
+const perguntas = [
+    {
+        enunciado: "Pergunta 1",
+        alternativas: [
+            {
+                texto: "Alternativa A",
+                afirmacao: "afirmacao da alternativa A."
+            },
+            {
+                texto: "Alternativa B",
+                afirmacao: "afirmacao da alternativa B."
+            }
+        ]
+    },
+    {
+        enunciado: "Pergunta 2",
+        alternativas: [
+            {
+                texto: "Alternativa A",
+                afirmacao: "afirmacao da alternativa A."
+            },
+            {
+                texto: "Alternativa B",
+                afirmacao: "afirmacao da alternativa B."
+            }
+        ]
+    }
+];
+
+let atual = 0;
+let perguntaAtual;
+let historiaFinal = "";
+
+function mostraPergunta(){
+    if (atual >= perguntas.length){
+        mostraResultado();t
+        return;
+    }
+    perguntaAtual = perguntas[atual];
+    caixaPerguntas.textContent = perguntaAtual.enunciado;
+    caixaAlternativas.textContent = "";
+    mostraAlternativas();
+}
+
+function mostraAlternativas(){
+    for(const alternativa of perguntaAtual.alternativas){
+        const botaoAlternativas = document.createElement("button");
+        botaoAlternativas.textContent = alternativa.texto;
+        botaoAlternativas.addEventListener("click",
+            ()=>respostaSelecionada(alternativa));
+        caixaAlternativas.appendChild(botaoAlternativas);
+    }
+}
+function respostaSelecionada(opcaoSelecionada){
+    const afirmacoes = opcaoSelecionada.afirmacao;
+    historiaFinal += afirmacoes + " ";
+    atual ++;
+    mostraPergunta();
+}
+
+
+
+
+function mostraResultado(){
+    caixaPerguntas.textContent = "De acordo com suas respostas...";
+    textoResultado.textContent = historiaFinal;
+    caixaAlternativas.textContent = "";
+}
+
+mostraPergunta();
+
+Adicionar comentário para a turma...
+
+
+Aviso: "https://kahoot.it/?pin=7818298&refer_me…"
+JOEL CAMARGO DO NACIMENTO JUNIOR
+Criado em: 7 de ago.7 de ago.
+https://kahoot.it/?pin=7818298&refer_method=link
+
+Adicionar comentário para a turma...
+
+
+Aviso: "# Tema Agrinho 2024 Nome do Aluno: <br>…"
+JOEL CAMARGO DO NACIMENTO JUNIOR
+Criado em: 24 de jul.24 de jul.
+# Tema Agrinho 2024
+Nome do Aluno:
+<br>
+Nome do Professor: Joel Camargo do Nascimento Júnior.
+<br>
+Colégio:
+<br>
+NRE: Ivaiporã
+<br>
+[Página no Vercel](https://formacao-agrinho.vercel.app/)
+<br>
+[Página no GitHub Pages](https://joelprofessor.github.io/Formacao_Agrinho/)
+![Imagem Agrinho](https://www.sistemafaep.org.br/wp-content/uploads/2021/07/agrinho_500x1280-2.jpg)
+
+Adicionar comentário para a turma...
+
+
+Aviso: "Logo Agrinho e Programação PR"
+JOEL CAMARGO DO NACIMENTO JUNIOR
+Criado em: 28 de jun.28 de jun.
+Logo Agrinho e Programação PR
+Exibindo logo_ProgParana.png
+logo_ProgParana.png
+
+logo_Agrinho.png
+Imagem
+
+Adicionar comentário para a turma...
+
+
+Aviso: "https://pt.programming-testing.com/play…"
+JOEL CAMARGO DO NACIMENTO JUNIOR
+Criado em: 26 de jun.26 de jun.
+https://pt.programming-testing.com/player/auth/login
+
+Adicionar comentário para a turma...
+
+Atividade: "Super-Híper-Mega-Baita Atividade Avaliativa "
+JOEL CAMARGO DO NACIMENTO JUNIOR postou uma nova atividade: Super-Híper-Mega-Baita Atividade Avaliativa
+Criado em: 19 de abr.19 de abr.
+Mural
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
 :root {
@@ -44,6 +274,22 @@ nav a:hover {
     text-decoration: underline;
     transform: scale(0.90);
     transition: transform 0.1s;
+}
+
+.graficos-container {
+    margin: 5rem;
+}
+
+.graficos-container__texto {
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 2rem;
+    border: var(--secondary-color) solid 2px;
+}
+
+span {
+    font-weight: bold;
+    color: var(--secondary-color);
 }
 
 footer {
